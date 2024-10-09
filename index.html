@@ -1,89 +1,107 @@
-<html>
-    <head>
-        <title>Web Pertemuan 2</title>
-        </head>
-        <body>
-            <!--ini untuk uppercase-->
-            Hello <u>world!!</u><br>
-            Nama Saya <b>Sesilya </b>Rahmi
-            <p>
-                Tempat lahir di <i>Bukittinggi</i>
-            </p>
-            <p>
-                <b><i><u>ini campur bold italic underline</u></i></b>
-            </p>
-            <p style="color: #ff00bb; font-size: 24; font-family: sans-serif;">
-                ini text berwarna
-            </p>
-            <h1>Heading 1</h1>
-            <h2>Heading 2</h2>
-            <h3>Heading 3</h3>
-            <h4>Heading 4</h4>
-            <h5>Heading 5</h5>
-            <a href="http:google.com">Ini menuju google</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Sesilya Rahmi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', sans-serif;
+        }
+        body {
+            background: #dfddd9;
+            background-size: cover;
+            padding: 20px;
+        }
+        .container {
+            background: #f5f5f5;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.3);
+        }
+        .header {
+            text-align: center;
+        }
+        .header h1 {
+            margin-bottom: 10px;
+        }
+        .header h3 {
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .section h2 {
+            background: #5c503d;
+            padding: 10px;
+            color: aliceblue;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        .section p {
+            line-height: 1.6;
+        }
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .section ul li {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
 
-            <br><br>
-            Yang mau nitip kopi
-            <ul style = "list-style-type: lower-latin;">
-                <li>Rahmi - Kopi Susu</li>
-                <li>Jelita - americano</li>
-                <li>Dinar - coklat </li>
-            </ul>
+<div class="container">
+    <div class="header">
+        <img src="Rahmi.jpg" width="100px">
+        <h1>Sesilya Rahmi</h1>
+        <h3>Bandung, Jawa Barat | +62-823-8736-0093 | sesilyarahmi03@gmail.com</h3>
+    </div>
 
-            <br>
-            <br>
-            <img src="Rahmi.jpg" width="200px">
+    <div class="section">
+        <h2>Profile</h2>
+        <p>I am a Telkom University student majoring in Information Systems. I am responsible for the work I have and can divide my time well. I am serious in completing something in order to get maximum and satisfactory results.</p>
+    </div>
 
-            <br>
-            <br>
-            <table border="1" width="100%" style="text-align: center;">
-                <tr height="50px">
-                    <td><img src="Rahmi.jpg" width="200px"></td>
-                    <td>baris 1 kolom b</td>
-                    <td>baris 1 kolom c</td>
-                </tr>
-                <tr>
-                    <td><b>baris 2 kolom a</b></td>
-                    <td><i>baris 2 kolom b</i></td>
-                    <td><u>baris 2 kolom c</u></td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td colspan="2">2</td>
-                </tr>
-                <tr>
-                    <td rowspan="2">merge</td>
-                    <td>5</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>6</td>
-                </tr>
-            </table>
+    <div class="section">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Telkom University</strong> - 2022 - Now</li>
+            <li><strong>SMA Negeri 1 Bukittinggi</strong> - 2019 - 2022</li>
+        </ul>
+    </div>
 
-            <br>
-            <br>
-            <form>
-                <input type="text" placeholder="input Nama"><br>
-                <input type="number" placeholder="input umur" ><br>
-                <input type="password" placeholder="input password"><br>
-                <textarea placeholder="input alamat" rows="5"></textarea>
-                <input type="radio" id="lakilaki" name="jenis kelamin">
-                <label for="lakilaki">laki-laki</label>
-                <input type="radio" id="perempuan" name="jenis kelamin">
-                <label for="perempuan">perempuan</label><br>
+    <div class="section">
+        <h2>Experience</h2>
+        <ul>
+            <li><strong>Staff ERP Laboratory 2024</strong>
+                <br>Treasure ERP Laboratory</li>
+            <li><strong>Java Business Competition Committee 2023</strong>
+                <br>Member of the Logistics & Consumption Division</li>
+            <li><strong>UKM SEARCH 2023 - Now</strong>
+                <br>Member of UKM SEARCH</li>
+            <li><strong>Dorm Team 2022 - 2023</strong>
+                <br>Treasure of Dorm Team</li>
+        </ul>
+    </div>
 
-                <select>
-                    <option value="lakilaki">laki-laki</option>
-                    <option value="perempuan">perempuan</option>
-                </select><br>
-    
-                <button type="submit">Save</button>
-                <button type="button" onclick="alert('anda batal');">Batal</button>
-            </form>
-        </body>
+    <div class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>Time Management</li>
+            <li>Team Work</li>
+            <li>Responsible</li>
+            <li>Emphaty</li>
+        </ul>
+    </div>
+</div>
+
+</body>
 </html>
-
-
-
